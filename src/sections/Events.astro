@@ -1,0 +1,14 @@
+---
+import EventCard from "../components/EventCard.astro";
+---
+<section class="size-full px-20 py-24 flex flex-col justify-center items-center gap-10 bg-background-secondary">
+    <div class="flex flex-col items-center gap-4">
+        <h2 class="text-3xl font-semibold text-title">Eventos Especiales</h2>
+        <p class="text-text-secondary text-balance">Para cada ocasión especial, creamos momentos que se disfrutan con todos los sentidos</p>
+    </div>
+    <span class="grid grid-cols-3 gap-4">
+        <EventCard imageSrc="/event-1.webp" title="Sabores a la Luz de las Velas" date="Primer Lunes de cada mes" description="Sabores que se degustan entre luces suaves y una atmósfera que invita a saborear cada instante" />
+        <EventCard imageSrc="/event-2.webp" title="El Sonido del Sabor" date="Todos los Viernes" description="Sabores que despiertan los sentidos, en un evento que combina gastronomía y ambiente único" />
+        <EventCard imageSrc="/event-3.webp" title="Entre Copas" date="25 de Noviembre de 2025" description="Entre copas y aromas se despiertan los sentidos en una experiencia que invita a disfrutar cada instante" />
+    </span>
+</section>

@@ -1,0 +1,16 @@
+---
+const { imageSrc, title, date, description } = Astro.props;
+---
+<div class="flex flex-col rounded-lg shadow-lg overflow-hidden bg-background-secondary max-w-[416px]">
+    <div class="relative">
+        <img class="aspect-video size-auto object-cover" src={imageSrc} alt={title} />
+        <div class="absolute bottom-5 left-5 flex flex-col">
+            <h3 class="text-white font-semibold uppercase text-balance">{title}</h3>
+            <p class="text-white/80 text-balance">{date}</p>
+        </div>
+    </div>
+    <div class="p-6 flex flex-col gap-2">
+        <p class="text-text-secondary text-balance">{description}</p>
+        <a href="#" class="bg-button hover:bg-button-hover transition-colors cursor-pointer duration-200 text-white font-semibold py-2 px-4 rounded ml-auto">Más Información</a>
+    </div>
+</div>

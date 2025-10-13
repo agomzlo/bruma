@@ -1,0 +1,15 @@
+---
+import TopDishCard from "../components/TopDishCard.astro";
+---
+<section class="size-full px-20 py-24 flex flex-col justify-center items-center gap-10">
+    <div class="flex flex-col items-center gap-4">
+        <h2 class="text-3xl font-semibold text-title">Lo más destacado del menú</h2>
+        <p class="text-text-secondary text-balance">Descubre nuestros platos estrella, cuidadosamente seleccionados para ofrecerte una experiencia gastronómica inolvidable</p>
+    </div>
+    <span class="grid grid-cols-3 gap-4">
+        <TopDishCard imageSrc="/top-dish-1.webp" title="Carpaccio de vieiras y mango con aceite de vainilla" description="Dulce, fresco y marino; equilibrio perfecto" />
+        <TopDishCard imageSrc="/top-dish-2.webp" title="Presa ibérica con chimichurri de hierbas frescas y puré de boniato" description="Potente, ahumado y con toque dulce" />
+        <TopDishCard imageSrc="/top-dish-3.webp" title="Crumble de manzana con crema inglesa y almendra tostada" description="Cálido, crujiente y reconfortante" />
+    </span>
+    <a href="#" class="bg-button hover:bg-button-hover transition-colors cursor-pointer duration-200 text-white font-semibold py-2 px-4 rounded">Ver el menú completo</a>
+</section>

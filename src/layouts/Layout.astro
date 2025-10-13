@@ -4,6 +4,8 @@ import '../styles/global.css';
 import '@fontsource-variable/playfair-display';
 import '@fontsource/lato';
 import '@fontsource-variable/montserrat';
+import Header from '../sections/Header.astro';
+import Footer from '../sections/Footer.astro';
 ---
 
 <!doctype html>
@@ -11,12 +13,16 @@ import '@fontsource-variable/montserrat';
 	<head>
 		<meta charset="UTF-8" />
 		<meta name="viewport" content="width=device-width" />
-		<link rel="icon" type="image/svg+xml" href="/favicon.svg" />
-		<meta name="generator" content={Astro.generator} />
-		<title>Astro Basics</title>
+		<link rel="icon" type="image/svg+xml" href="/bruma-icon.svg" />
+		<meta name="description" content="Donde cada plato revela una historia y cada sabor deja huella" />
+		<title>Bruma</title>
 	</head>
-	<body>
-		<slot />
+	<body class="font-montserrat">
+		<div class="w-full min-h-screen bg-background-primary">
+			<Header />
+			<slot />
+			<Footer />
+		</div>
 	</body>
 </html>
 

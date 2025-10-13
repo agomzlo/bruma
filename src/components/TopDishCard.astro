@@ -1,0 +1,11 @@
+---
+const { imageSrc, title, description } = Astro.props;
+---
+
+<div class="flex flex-col rounded-lg shadow-lg overflow-hidden bg-background-secondary max-w-[416px]">
+    <img class="aspect-video size-auto object-cover" src={imageSrc} alt={title} />
+    <div class="p-6 flex flex-col gap-2">
+        <h3 class="text-text-primary uppercase text-balance">{title}</h3>
+        <p class="text-text-secondary text-balance">{description}</p>
+    </div>
+</div>
