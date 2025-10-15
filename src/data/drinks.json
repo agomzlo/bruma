@@ -1,0 +1,108 @@
+{
+  "Vinos Blancos": [
+    {
+      "name": "Marqués de Murrieta Capellanía (Rioja)",
+      "description": "Elegante, floral y mineral."
+    },
+    {
+      "name": "Albariño Pazo de Señoráns (Rías Baixas)",
+      "description": "Fresco, cítrico y salino."
+    },
+    {
+      "name": "Verdejo José Pariente (Rueda)",
+      "description": "Frutal y equilibrado."
+    }
+  ],
+  "Vinos Tintos": [
+    {
+      "name": "Pago de Carraovejas (Ribera del Duero)",
+      "description": "Potente y redondo."
+    },
+    {
+      "name": "Lustau 3 En Rama (Jerez)",
+      "description": "Complejo y aromático."
+    },
+    {
+      "name": "Cantos de Valpiedra (Rioja)",
+      "description": "Clásico moderno con notas de vainilla."
+    }
+  ],
+  "Espumosos Champagne": [
+    {
+      "name": "Gramona Imperial (Corpinnat)",
+      "description": "Fino y estructurado."
+    },
+    {
+      "name": "Moët & Chandon Brut Impérial (Champagne)",
+      "description": "Icono de elegancia."
+    }
+  ],
+  "Cocteles Bruma": [
+    {
+      "name": "Bruma Sour",
+      "description": "Ginebra floral, lima y toque de romero ahumado."
+    },
+    {
+      "name": "Mediterranean Mule",
+      "description": "Vodka, jengibre, albahaca y limón."
+    },
+    {
+      "name": "Flor de Mar",
+      "description": "Ron blanco, agua de azahar y espuma de sal marina."
+    },
+    {
+      "name": "Luz de Higuera",
+      "description": "Tequila reposado, puré de higo, miel y un toque de lima."
+    },
+    {
+      "name": "Ceniza de Cacao",
+      "description": "Whisky ahumado, licor de cacao y bitter de naranja."
+    },
+    {
+      "name": "Jardín Nocturno",
+      "description": "Ginebra botánica, pepino, flor de saúco y carbón activado."
+    },
+    {
+      "name": "Brisa Oriental",
+      "description": "Sake, sirope de jengibre, lima kaffir y perfume de jazmín."
+    },
+    {
+      "name": "Ámbar del Sur",
+      "description": "Ron añejo, miel de caña, bitter de café y piel de naranja flameada."
+    }
+  ],
+  "Cafés o Infusiones": [
+    {
+      "name": "Espresso Bruma",
+      "description": "Café intenso de tueste natural con notas de cacao y avellana."
+    },
+    {
+      "name": "Café Doble de Origen",
+      "description": "Grano seleccionado de finca única, molido al momento para preservar su aroma."
+    },
+    {
+      "name": "Cappuccino de Canela",
+      "description": "Espuma cremosa de leche con un toque sutil de canela de Ceylán."
+    },
+    {
+      "name": "Café Frío de la Casa",
+      "description": "Cold brew infusionado en frío durante 18 horas, servido con hielo y piel de naranja."
+    },
+    {
+      "name": "Infusión de Lavanda y Miel",
+      "description": "Mezcla relajante de flores de lavanda, manzanilla y un toque natural de miel."
+    },
+    {
+      "name": "Té Verde Mediterráneo",
+      "description": "Té verde con hierbabuena fresca, piel de limón y pétalos de jazmín."
+    },
+    {
+      "name": "Rooibos de Vainilla y Naranja",
+      "description": "Infusión sin teína, con matices cítricos y dulces de vainilla bourbon."
+    },
+    {
+      "name": "Tisana de Jengibre y Limón",
+      "description": "Infusión revitalizante con jengibre natural, hierba limón y menta."
+    }
+  ]
+}

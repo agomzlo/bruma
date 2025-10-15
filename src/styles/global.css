@@ -15,3 +15,11 @@
     --font-lato: "Lato", sans-serif;
     --font-montserrat: "Montserrat Variable", sans-serif;
 }
+
+summary {
+  list-style: none;
+}
+
+summary::-webkit-details-marker {
+  display: none;
+}

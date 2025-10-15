@@ -1,0 +1,160 @@
+{
+  "Entrantes": [
+    {
+      "name": "Gazpacho de remolacha y frutos rojos",
+      "description": "Toque ácido y fresco, con aceite de albahaca y brotes tiernos.",
+      "allergens": []
+    },
+    {
+      "name": "Ostras del Atlántico con espuma de limón y cava",
+      "description": "Fusión marina con notas cítricas y sutiles burbujas.",
+      "allergens": ["moluscos", "sulfitos"]
+    },
+    {
+      "name": "Tartar de atún rojo con aguacate y soja cítrica",
+      "description": "Atún de almadraba, aliñado con soja, jengibre y lima.",
+      "allergens": ["pescado", "soja", "sésamo"]
+    },
+    {
+      "name": "Crema de coliflor trufada con crujiente de jamón ibérico",
+      "description": "Textura sedosa con aroma de trufa blanca.",
+      "allergens": ["lácteos"]
+    },
+    {
+      "name": "Carpaccio de vieiras y mango con aceite de vainilla",
+      "description": "Dulce, fresco y marino; equilibrio perfecto.",
+      "allergens": ["moluscos"]
+    }
+  ],
+  "Para Compartir": [
+    {
+      "name": "Pan de masa madre con mantequilla ahumada y sal en escamas",
+      "description": "Elaboración diaria, mantequilla infusionada con leña de olivo.",
+      "allergens": ["gluten", "lácteos"]
+    },
+    {
+      "name": "Croquetas cremosas de boletus y parmesano",
+      "description": "Textura ligera y sabor profundo.",
+      "allergens": ["gluten", "lácteos", "huevo"]
+    },
+    {
+      "name": "Pulpo a la brasa con parmentier de pimentón y aceite de ajo negro",
+      "description": "Contraste entre humo, tierra y mar.",
+      "allergens": ["moluscos"]
+    },
+    {
+      "name": "Ensalada templada de burrata, tomates confitados y pesto de rúcula",
+      "description": "Frescura italiana reinterpretada.",
+      "allergens": ["lácteos", "frutos secos"]
+    },
+    {
+      "name": "Timbal de cordero desmigado con reducción de PX",
+      "description": "Intenso y dulce, servido con chips de yuca.",
+      "allergens": ["sulfitos"]
+    }
+  ],
+  "Platos Principales": [
+      {
+        "name": "Lubina salvaje al horno con emulsión de cítricos y hinojo",
+        "description": "Suavidad marina con notas frescas.",
+        "allergens": ["pescado"]
+      },
+      {
+        "name": "Corvina sobre puré de coliflor y crumble de aceituna negra",
+        "description": "Contraste entre lo cremoso y lo crujiente.",
+        "allergens": ["pescado"]
+      },
+      {
+        "name": "Taco de atún sellado con miso y sésamo tostado",
+        "description": "Inspiración japonesa con alma mediterránea.",
+        "allergens": ["pescado", "soja", "sésamo"]
+      },
+      {
+        "name": "Arroz meloso de carabineros y azafrán",
+        "description": "Fondo intenso, grano al punto y perfume de mar.",
+        "allergens": ["crustáceos", "sulfitos"]
+      },
+      {
+        "name": "Calamar relleno de quinoa, espinacas y crema de almendra",
+        "description": "Fusión saludable con textura sedosa.",
+        "allergens": ["moluscos", "frutos secos"]
+      },
+      {
+        "name": "Solomillo de ternera con salsa de vino tinto y puré de apionabo",
+        "description": "Tradición y modernidad en un equilibrio perfecto.",
+        "allergens": ["sulfitos", "lácteos"]
+      },
+      {
+        "name": "Carrillera ibérica a baja temperatura con parmentier de patata violeta",
+        "description": "Melosa, aromática y elegante.",
+        "allergens": ["sulfitos", "lácteos"]
+      },
+      {
+        "name": "Pato lacado con miel de romero y zanahorias asadas",
+        "description": "Dulce, especiado y equilibrado.",
+        "allergens": ["sulfitos"]
+      },
+      {
+        "name": "Lomo de cordero con couscous de hierbas y yogur especiado",
+        "description": "Un viaje entre Andalucía y el Magreb.",
+        "allergens": ["gluten", "lácteos"]
+      },
+      {
+        "name": "Presa ibérica con chimichurri de hierbas frescas y puré de boniato",
+        "description": "Potente, ahumado y con toque dulce.",
+        "allergens": []
+      },
+      {
+        "name": "Risotto de setas con crema de trufa y parmesano curado",
+        "description": "Intensidad aromática y textura cremosa.",
+        "allergens": ["lácteos"]
+      },
+      {
+        "name": "Lasaña de berenjena con ricotta y pesto de albahaca",
+        "description": "Ligera y perfumada.",
+        "allergens": ["lácteos", "frutos secos"]
+      },
+      {
+        "name": "Timbal de quinoa, calabaza asada y emulsión de limón",
+        "description": "Fresco, colorido y equilibrado.",
+        "allergens": []
+      },
+      {
+        "name": "Gnocchi caseros con crema de espárragos y nuez moscada",
+        "description": "Suaves, aromáticos y reconfortantes.",
+        "allergens": ["gluten", "huevo", "lácteos"]
+      },
+      {
+        "name": "Tagliatelle de tinta con verduras salteadas y alioli ligero de ajo negro",
+        "description": "Intenso y vegetal, con personalidad.",
+        "allergens": ["gluten", "huevo"]
+      }
+    ],
+  "Postres": [
+    {
+      "name": "Tarta de queso de cabra con coulis de frutos rojos",
+      "description": "Cremosa y ligeramente salada.",
+      "allergens": ["lácteos", "gluten"]
+    },
+    {
+      "name": "Texturas de chocolate y aceite de oliva virgen extra",
+      "description": "Contraste entre amargo y frutado.",
+      "allergens": ["lácteos"]
+    },
+    {
+      "name": "Helado artesanal de lavanda y miel de Málaga",
+      "description": "Floral, suave y perfumado.",
+      "allergens": ["lácteos"]
+    },
+    {
+      "name": "Crumble de manzana con crema inglesa y almendra tostada",
+      "description": "Cálido, crujiente y reconfortante.",
+      "allergens": ["gluten", "huevo", "frutos secos"]
+    },
+    {
+      "name": "Mousse de limón y albahaca con tierra de galleta",
+      "description": "Refrescante y equilibrado.",
+      "allergens": ["gluten", "lácteos"]
+    }
+  ]
+}

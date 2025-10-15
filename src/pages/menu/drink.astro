@@ -1,0 +1,29 @@
+---
+import Layout from "../../layouts/Layout.astro";
+import drink from "../../data/drinks.json";
+
+type Category = keyof typeof drink;
+---
+
+<Layout>
+    <section class="flex-1 size-full flex flex-col items-center gap-4 md:py-16 py-10">
+        <h2 class="md:text-3xl text-2xl font-semibold text-title">Carta de Bebidas</h2>
+        <div class="flex flex-col gap-4 max-w-[960px] size-full px-4">
+            {Object.keys(drink).map((category, index) => (
+                <details open={index <= 1} class="flex flex-col open:bg-background-secondary open:shadow rounded-lg md:p-4 p-2">
+                    <summary class="text-title uppercase font-semibold text-xl border-b border-button md:pb-4 pb-2 cursor-pointer">{category}</summary>
+                    <ul class="flex flex-col md:gap-4 gap-2 md:py-4 py-2">
+                        {Object.values(drink[category as Category]).map((drink) => (
+                            <li class="flex flex-col md:gap-2 gap-1 md:pl-4 pl-2">
+                                <h3 class="text-primary uppercase text-balance font-semibold md:text-lg">{drink.name}</h3>
+                                <div class="flex flex-col pl-2 md:gap-2 gap-1">
+                                    <p class="text-text-primary">{drink.description}</p>
+                                </div>
+                            </li>
+                        ))}
+                    </ul>
+                </details>
+                ))}
+        </div>
+    </section>
+</Layout>

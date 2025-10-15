@@ -2,12 +2,12 @@
 import ReviewCard from "../components/ReviewCard.astro";
 ---
 
-<section class="size-full px-20 py-24 flex flex-col justify-center items-center gap-10">
+<section class="size-full px-5 md:px-20 py-5 md:py-10 flex flex-col justify-center items-center gap-10">
     <div class="flex flex-col items-center gap-4">
-        <h2 class="text-3xl font-semibold text-title">Testimonios de Clientes</h2>
+        <h2 class="md:text-3xl text-2xl text-left w-full md:w-auto font-semibold text-title">Testimonios de Clientes</h2>
         <p class="text-text-secondary text-balance">Porque escuchamos a nuestros clientes para hacer que cada momento sea especial</p>
     </div>
-    <span class="grid grid-cols-3 gap-4">
+    <span class="grid grid-cols-1 md:grid-cols-3 gap-4">
         <ReviewCard review="Una experiencia gastronómica impecable: sabores refinados, presentación impecable y un ambiente que refleja verdadero lujo. Cada visita supera la anterior." name="Alejandro V." />
         <ReviewCard review="El equilibrio perfecto entre alta cocina y elegancia en cada detalle. Un lugar donde cada cena se convierte en un momento memorable." name="Isabella R." />
         <ReviewCard review="Servicio excepcional, selección de vinos inigualable y platos que despiertan los sentidos. Un espacio diseñado para quienes apreciamos la excelencia." name="Sebastián L." />
