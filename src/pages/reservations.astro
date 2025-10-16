@@ -1,0 +1,80 @@
+---
+import Layout from "../layouts/Layout.astro";
+---
+
+<Layout>
+    <section class="flex-1 size-full flex flex-col items-center md:py-16 py-10 px-5 md:px-20">
+        <div class="flex flex-col flex-1 gap-4 items-center max-w-[1200px] size-full">
+            <h2 class="md:text-3xl text-2xl font-semibold text-title">Reservas y Contacto</h2>
+            <p class="font-light text-text-primary text-balance md:text-lg text-center">Reserva tu mesa y déjate seducir por una experiencia donde cada detalle está pensado para que tu comida sea inolvidable</p>
+            <span class="flex flex-1 md:flex-row flex-col gap-10 size-full">
+                <div class="flex flex-col flex-1 gap-2 size-full">
+                    <h3 class="font-semibold text-title text-xl">Reserva tu mesa</h3>
+                    <form action="" class="flex-1 size-full flex flex-col gap-4">
+                        <span class="flex md:flex-row flex-col w-full gap-2">
+                            <div class="flex flex-col gap-2 flex-1">
+                                <label class="font-semibold text-text-primary text-sm" for="name">Nombre Completo</label>
+                                <input class="border border-button rounded-md px-3 py-2" type="text" id="name" name="name" placeholder="Alberto Gomez Martinez" />
+                            </div>
+                            <div class="flex flex-col gap-2 flex-1">
+                                <label class="font-semibold text-text-primary text-sm" for="phone">Teléfono</label>
+                                <input class="border border-button rounded-md px-3 py-2" type="tel" id="phone" name="phone" placeholder="666 666 666" />
+                            </div>
+                        </span>
+                        <span class="flex flex-col gap-2">
+                            <label class="font-semibold text-text-primary text-sm" for="email">Correo Electrónico</label>
+                            <input class="border border-button rounded-md px-3 py-2" type="email" id="email" name="email" placeholder="alberto.gomez.martinez@gmail.com" />
+                        </span>
+                        <span class="flex md:flex-row flex-col w-full gap-2">
+                            <div class="flex flex-col gap-2">
+                                <label class="font-semibold text-text-primary text-sm" for="persons">Comensales</label>
+                                <input class="border border-button rounded-md px-3 py-2" type="number" id="persons" name="persons" placeholder="2" />
+                            </div>
+                            <div class="flex flex-col gap-2">
+                                <label class="font-semibold text-text-primary text-sm" for="date">Fecha</label>
+                                <input class="border border-button rounded-md px-3 py-2" lang="es-ES" type="date" id="date" name="date" />
+                            </div>
+                            <div class="flex flex-col gap-2">
+                                <label class="font-semibold text-text-primary text-sm" for="time">Hora</label>
+                                <select name="time" id="time" class="border border-button rounded-md px-3 py-[9.5px]">
+                                    <option value="" disabled selected>Selecciona una hora</option>
+                                    <option value="13:00">13:00</option>
+                                    <option value="13:30">13:30</option>
+                                    <option value="14:00">14:00</option>
+                                    <option value="14:30">14:30</option>
+                                    <option value="15:00">15:00</option>
+                                    <option value="15:30">15:30</option>
+                                    <option value="16:00">16:00</option>
+                                    <option value="20:00">20:00</option>
+                                    <option value="20:30">20:30</option>
+                                    <option value="21:00">21:00</option>
+                                    <option value="21:30">21:30</option>
+                                    <option value="22:00">22:00</option>
+                                    <option value="22:30">22:30</option>
+                                    <option value="23:00">23:00</option>
+                                </select>
+                            </div>
+                        </span>
+                        <button class="bg-button hover:bg-button-hover transition-colors cursor-pointer duration-200 text-white font-semibold py-2 px-4 rounded">Confirmar Reserva</button>
+                    </form>
+                </div>
+                <div class="flex flex-col flex-1 gap-2 size-full">
+                    <h3 class="font-semibold text-title text-xl">Contacte con Nosotros</h3>
+                        <span class="flex flex-row gap-2">
+                            <p class="font-semibold">Telefono: </p>
+                            <p>+34 666 666 666</p>
+                        </span>
+                        <span class="flex flex-row gap-2">
+                            <p class="font-semibold">Correo Electronico: </p>
+                            <p>contacto@bruma.com</p>
+                        </span>
+                        <span class="flex flex-row gap-2">
+                            <p class="font-semibold">Dirección: </p>
+                            <p>Calle Marques de Larios, 123</p>
+                        </span>
+                        <iframe class="rounded-xl shadow size-full aspect-square md:aspect-[4/3]" src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3198.11052279097!2d-4.4241907235737346!3d36.71990677222072!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0xd72f795bb861ae7%3A0xa45f8c8892a0d4d0!2sC.%20Marqu%C3%A9s%20de%20Larios%2C%20123%2C%20Distrito%20Centro%2C%2029005%20M%C3%A1laga!5e0!3m2!1ses!2ses!4v1760632300388!5m2!1ses!2ses" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+                </div>
+             </span>
+        </div>
+    </section>
+</Layout>

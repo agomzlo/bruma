@@ -1,0 +1,13 @@
+---
+const { imgSrc, name, date, description, reserveHref, rotate } = Astro.props;
+---
+
+<span class={`flex ${rotate ? "md:flex-row-reverse" : "md:flex-row"} flex-col rounded-2xl overflow-hidden bg-background-secondary shadow-lg gap-2`}>
+    <img class="w-full md:w-1/2 h-auto object-cover" src={imgSrc} alt="">
+    <div class="flex flex-1 flex-col p-2 md:p-4 gap-2 md:gap-4">
+        <h2 class="text-title text-xl font-semibold">{name}</h2>
+        <p class="font-light text-text-secondary">{date}</p>
+        <p>{description}</p>
+        <a href={reserveHref} class={`bg-button hover:bg-button-hover transition-colors cursor-pointer duration-200 text-white font-semibold py-2 px-4 rounded text-center ${rotate ? "md:mr-auto" : "md:ml-auto"}`}>Reservar Evento</a>
+    </div>
+</span>

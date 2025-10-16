@@ -8,7 +8,7 @@ type Category = keyof typeof menu;
 <Layout>
     <section class="flex-1 size-full flex flex-col items-center gap-4 md:py-16 py-10">
         <h2 class="md:text-3xl text-2xl font-semibold text-title">Carta de Comidas</h2>
-        <div class="flex flex-col gap-4 max-w-[960px] size-full px-4">
+        <div class="flex flex-col gap-4 max-w-[1200px] size-full px-4">
             {Object.keys(menu).map((category, index) => (
                 <details open={index <= 1} class="flex flex-col open:bg-background-secondary open:shadow rounded-lg md:p-4 p-2">
                     <summary class="text-title uppercase font-semibold text-xl border-b border-button md:pb-4 pb-2 cursor-pointer">{category}</summary>
