@@ -14,10 +14,11 @@ import { events } from "../data/events.json";
                     <Event
                         imgSrc={event.imgSrc}
                         name={event.name}
-                        date={event.date}
+                        date={event.dateDescription}
                         description={event.description}
-                        reserveHref={event.reserveHref}
+                        reserveHref={`/reservations/event/${event.slug}`}
                         rotate={index % 2 === 0}
+                        eventId={event.slug}
                     />
                 ))}
             </span>

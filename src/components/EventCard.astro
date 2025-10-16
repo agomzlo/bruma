@@ -1,5 +1,5 @@
 ---
-const { imageSrc, title, date, description } = Astro.props;
+const { imageSrc, title, date, description, eventLink } = Astro.props;
 ---
 <div class="flex flex-col rounded-lg shadow-lg overflow-hidden bg-background-secondary max-w-[416px]">
     <div class="relative">
@@ -11,6 +11,6 @@ const { imageSrc, title, date, description } = Astro.props;
     </div>
     <div class="p-6 flex flex-col gap-2">
         <p class="text-text-secondary text-balance">{description}</p>
-        <a href="#" class="bg-button hover:bg-button-hover transition-colors cursor-pointer duration-200 text-white font-semibold py-2 px-4 rounded ml-auto">Más Información</a>
+        <a href={eventLink} class="bg-button hover:bg-button-hover transition-colors cursor-pointer duration-200 text-white font-semibold py-2 px-4 rounded ml-auto">Más Información</a>
     </div>
 </div>

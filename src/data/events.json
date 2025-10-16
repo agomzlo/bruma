@@ -2,24 +2,33 @@
     "events": [
         {
             "name": "Sabores a la Luz de las Velas",
-            "date": "Primer Lunes de cada mes",
+            "dateDescription": "Primer Lunes de cada mes - 21:00h",
             "imgSrc": "/event-1.webp",
+            "shortDescription": "Sabores que se degustan entre luces suaves y una atmósfera que invita a saborear cada instante",
             "description": "Cuando la noche cae, Bruma se transforma en un refugio de calma, elegancia y sutileza. La Cena a la Luz de las Velas es una celebración del placer gastronómico en su forma más pura: un menú degustación de varios tiempos que combina productos de temporada, técnicas contemporáneas y una presentación impecable. Cada mesa es iluminada suavemente por velas aromáticas que crean un ambiente de intimidad, mientras suena de fondo una selección musical pensada para acompañar cada momento. El servicio, discreto y atento, acompaña el ritmo de la velada sin interrumpir la magia del instante. Una noche pensada para conectar, disfrutar y dejarse llevar por los sentidos, en un entorno donde cada detalle está cuidadosamente orquestado.",
-            "reserveHref": "#"
+            "date": "first-monday",
+            "time": "21:00",
+            "slug": "sabores-a-la-luz-de-las-velas"
         },
         {
             "name": "El Sonido del Sabor",
-            "date": "Todos los Viernes",
+            "dateDescription": "Todos los Viernes - 21:00h",
             "imgSrc": "/event-2.webp",
+            "shortDescription": "Sabores que despiertan los sentidos, en un evento que combina gastronomía y ambiente único",
             "description": "En Bruma, creemos que la gastronomía y la música comparten un mismo lenguaje: el de la emoción. Nuestra Cena con Música en Vivo combina ambos mundos en una velada sofisticada donde los sabores se entrelazan con las notas de jazz, soul o música acústica interpretada por artistas locales. El menú, diseñado especialmente para la ocasión, presenta platos de autor inspirados en la temporada, con texturas delicadas y contrastes que despiertan la curiosidad del paladar. La atmósfera se complementa con una iluminación envolvente y un servicio fluido que permite disfrutar del espectáculo sin interrupciones.",
-            "reserveHref": "#"
+            "date": "every-friday",
+            "time": "21:00",
+            "slug": "el-sonido-del-sabor"
         },
         {
             "name": "Entre Copas",
-            "date": "25 de Noviembre de 2025",
+            "dateDescription": "25 de Noviembre de 2025 - 21:00h",
             "imgSrc": "/event-3.webp",
+            "shortDescription": "Entre copas y aromas se despiertan los sentidos en una experiencia que invita a disfrutar cada instante",
             "description": "En Bruma, te invitamos a descubrir el alma del vino a través de una experiencia sensorial guiada por nuestro sumiller. Durante la cata, explorarás una cuidada selección de vinos de autor y etiquetas locales, elegidos por su carácter, complejidad y autenticidad. Cada copa será acompañada por pequeños bocados diseñados en armonía, creados especialmente para resaltar las notas frutales, minerales o especiadas de cada vino. La experiencia se desarrolla en nuestro salón principal, preparado para la ocasión con una iluminación cálida y un ambiente íntimo que invita a la conversación. Una cita perfecta para quienes buscan entender el vino más allá del paladar: como arte, historia y emoción embotellada.",
-            "reserveHref": "#"
+            "date": "2025-11-25",
+            "time": "21:00",
+            "slug": "entre-copas"
         }
     ]
 }

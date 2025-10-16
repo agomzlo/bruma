@@ -1,31 +1,36 @@
 ---
-import Layout from "../layouts/Layout.astro";
+import Layout from "../../../layouts/Layout.astro";
+import events from "../../../data/events.json";
+import type { Event } from "../../../types/interfaces";
 
-const times = [
-  "13:00","13:30","14:00","14:30","15:00","15:30",
-  "16:00","20:00","20:30","21:00","21:30","22:00",
-  "22:30","23:00"
-];
+const { eventName } = Astro.params;
 
-const now = new Date();
-const currentMinutes = now.getHours() * 60 + now.getMinutes();
+const event = events.events.find(event => event.slug === eventName) as Event;
 
-function getNextTime(timesArray: string[]) {
-  for (const t of timesArray) {
-    const [hour, minute] = t.split(":").map(Number);
-    const totalMinutes = hour * 60 + minute;
-    if (totalMinutes > currentMinutes) return t;
-  }
-  return timesArray[0];
+
+function getFirstMondayOfNextMonth() {
+  const now = new Date();
+  const nextMonth = new Date(now.getFullYear(), now.getMonth() + 1, 1);
+  const dayOfWeek = nextMonth.getDay();
+  const daysToAdd = (dayOfWeek === 0) ? 1 : (dayOfWeek === 1 ? 0 : 8 - dayOfWeek);
+  nextMonth.setDate(nextMonth.getDate() + daysToAdd);
+  return nextMonth;
 }
 
-const selectedTime = getNextTime(times);
+const firstMonday = getFirstMondayOfNextMonth();
 
-if (now.getHours() >= 23) {
-  now.setDate(now.getDate() + 1);
+function getNextFriday(fromDate = new Date()) {
+  const date = new Date(fromDate);
+  const day = date.getDay();
+  const diff = (5 - day + 7) % 7 || 7;
+  date.setDate(date.getDate() + diff);
+  return date;
 }
 
-const date = now.toISOString().split("T")[0];
+const nextFriday = getNextFriday();
+
+const eventDate = (event?.date === 'first-monday' ? firstMonday : event?.date === 'every-friday' ? nextFriday : new Date(event.date)).toISOString().split("T")[0];
+const eventTime = event?.time;
 ---
 
 <Layout>
@@ -58,17 +63,29 @@ const date = now.toISOString().split("T")[0];
                             </div>
                             <div class="flex flex-col gap-2 flex-1">
                                 <label class="font-semibold text-text-primary text-sm" for="date">Fecha</label>
-                                <input class="border border-button rounded-md px-3 py-2" value={date} type="date" id="date" name="date" />
+                                <input class="border border-button rounded-md px-3 py-2" disabled value={eventDate} type="date" id="date" name="date" />
                             </div>
                             <div class="flex flex-col gap-2 flex-1">
                                 <label class="font-semibold text-text-primary text-sm" for="time">Hora</label>
-                                <select name="time" id="time" class="border border-button rounded-md px-3 py-[9.5px]">
-                                    {times.map(time => (
-                                        <option value={time} selected={time === selectedTime}>{time}</option>
-                                    ))}
+                                <select name="time" id="time" disabled class="border border-button rounded-md px-3 py-[9.5px]">
+                                    <option selected={eventTime === '13:00'} value="13:00">13:00</option>
+                                    <option selected={eventTime === '13:30'} value="13:30">13:30</option>
+                                    <option selected={eventTime === '14:00'} value="14:00">14:00</option>
+                                    <option selected={eventTime === '14:30'} value="14:30">14:30</option>
+                                    <option selected={eventTime === '15:00'} value="15:00">15:00</option>
+                                    <option selected={eventTime === '15:30'} value="15:30">15:30</option>
+                                    <option selected={eventTime === '16:00'} value="16:00">16:00</option>
+                                    <option selected={eventTime === '20:00'} value="20:00">20:00</option>
+                                    <option selected={eventTime === '20:30'} value="20:30">20:30</option>
+                                    <option selected={eventTime === '21:00'} value="21:00">21:00</option>
+                                    <option selected={eventTime === '21:30'} value="21:30">21:30</option>
+                                    <option selected={eventTime === '22:00'} value="22:00">22:00</option>
+                                    <option selected={eventTime === '22:30'} value="22:30">22:30</option>
+                                    <option selected={eventTime === '23:00'} value="23:00">23:00</option>
                                 </select>
                             </div>
                         </span>
+                        <p class="text-text-secondary text-balance">Usted esta reservando para el evento <span class="font-semibold">{event?.name}</span></p>
                         <button class="bg-button hover:bg-button-hover transition-colors cursor-pointer duration-200 text-white font-semibold py-2 px-4 rounded">Confirmar Reserva</button>
                     </form>
                 </div>

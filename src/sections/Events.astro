@@ -1,5 +1,6 @@
 ---
 import EventCard from "../components/EventCard.astro";
+import events from "../data/events.json";
 ---
 <section class="size-full px-5 md:px-20 py-5 md:py-10 flex flex-col justify-center items-center gap-10 bg-background-secondary">
     <div class="flex flex-col items-center gap-4">
@@ -7,8 +8,16 @@ import EventCard from "../components/EventCard.astro";
         <p class="text-text-secondary text-balance">Para cada ocasión especial, creamos momentos que se disfrutan con todos los sentidos</p>
     </div>
     <span class="grid grid-cols-1 md:grid-cols-3 gap-4">
-        <EventCard imageSrc="/event-1.webp" title="Sabores a la Luz de las Velas" date="Primer Lunes de cada mes" description="Sabores que se degustan entre luces suaves y una atmósfera que invita a saborear cada instante" />
-        <EventCard imageSrc="/event-2.webp" title="El Sonido del Sabor" date="Todos los Viernes" description="Sabores que despiertan los sentidos, en un evento que combina gastronomía y ambiente único" />
-        <EventCard imageSrc="/event-3.webp" title="Entre Copas" date="25 de Noviembre de 2025" description="Entre copas y aromas se despiertan los sentidos en una experiencia que invita a disfrutar cada instante" />
+        {
+            events.events.map((event) => (
+                <EventCard
+                    imageSrc={event.imgSrc}
+                    title={event.name}
+                    date={event.dateDescription}
+                    description={event.shortDescription}
+                    eventLink={`/events/#${event.slug}`}
+                />
+            ))
+        }
     </span>
 </section>
