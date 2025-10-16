@@ -1,0 +1,30 @@
+---
+import AboutUs from "../icons/AboutUs.astro";
+import Home from "../icons/Home.astro";
+import Menu from "../icons/Menu.astro";
+import Events from "../icons/Events.astro";
+import Reserves from "../icons/Reserves.astro";
+---
+
+<nav class="flex flex-row justify-between sticky bottom-0 left-0 right-0 bg-background-secondary z-10 md:hidden">
+    <a href="/" class="group flex flex-col p-2 items-center gap-2 active:scale-95 transition-all">
+        <Home class="size-8 text-title/85 group-active:text-title" />
+        <span class="font-semibold text-title/85 group-active:text-title">Inicio</span>
+    </a>
+    <a href="/menu" class="group flex flex-col p-2 items-center gap-2 active:scale-95 transition-all">
+        <Menu class="size-8 text-title/85 group-active:text-title" />
+        <span class="font-semibold text-title/85 group-active:text-title">Menu</span>
+    </a>
+    <a href="/reserves" class="group flex flex-col p-2 items-center gap-2 active:scale-95 transition-all">
+        <Reserves class="size-8 text-title/85 group-active:text-title" />
+        <span class="font-semibold text-title/85 group-active:text-title">Reservas</span>
+    </a>
+    <a href="/events" class="group flex flex-col p-2 items-center gap-2 active:scale-95 transition-all">
+        <Events class="size-8 text-title/85 group-active:text-title" />
+        <span class="font-semibold text-title/85 group-active:text-title">Eventos</span>
+    </a>
+    <a href="/about-us" class="group flex flex-col p-2 items-center gap-2 active:scale-95 transition-all">
+        <AboutUs class="size-8 text-title/85 group-active:text-title" />
+        <span class="font-semibold text-title/85 group-active:text-title">Nosotros</span>
+    </a>
+</nav>
